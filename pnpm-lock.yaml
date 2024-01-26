@@ -1,0 +1,25 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  lit-element:
+    specifier: 2.0.1
+    version: 2.0.1
+  lit-html:
+    specifier: ^1.0.0
+    version: 1.4.1
+
+packages:
+
+  /lit-element@2.0.1:
+    resolution: {integrity: sha512-2bu3B2ZYUZgntvOgu3i5mRK8geo45CLUwxwJEYK54hyednoJasjiTZPB13NBg1D+hNM2JfmWTWJnh1QEUQv7zw==}
+    dependencies:
+      lit-html: 1.4.1
+    dev: false
+
+  /lit-html@1.4.1:
+    resolution: {integrity: sha512-B9btcSgPYb1q4oSOb/PrOT6Z/H+r6xuNzfH4lFli/AWhYwdtrgQkQWBbIc6mdnf6E2IL3gDXdkkqNktpU0OZQA==}
+    dev: false

@@ -12,6 +12,7 @@ class MyElement extends LitElement {
     super.connectedCallback();
     this.content = this.removeChild(this.childNodes[0]);
   }
+
   static get styles() {
     return css`.mood { color: green; }`;
   }
@@ -19,9 +20,11 @@ class MyElement extends LitElement {
   render() {
     return html`
       Web Components are
+        <!-- content rendered in the shadow dom will not be styled from host -->
         <span class='mood'>${this.mood}</span>
-        <slot></slot>
+        <!-- the slots will retain the styles from the host dom -->
         <slot name='a'></slot>
+        <slot></slot>
       !`;
   }
 
